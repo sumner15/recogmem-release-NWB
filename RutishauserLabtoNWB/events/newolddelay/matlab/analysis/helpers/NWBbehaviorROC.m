@@ -47,6 +47,7 @@ end
 % s1=sum(recogState - newOldRecogLabels);
 
 recogState = newOldRecogLabels;
+recogState = str2double(newOldRecogLabels);
 
 % if isempty(responsesEventfile)
 %     warning('no eventfile was loaded');

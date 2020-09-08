@@ -33,7 +33,7 @@ end
 onlyCells = copyFieldIfExists( params, 'onlyCells', []);
 onlyAreas = copyFieldIfExists( params, 'onlyAreas', []);
 
-fname = [basedirData input_session.filename];
+fname = fullfile(basedirData, input_session.filename);
 
 nwb = nwbRead(fname);
 

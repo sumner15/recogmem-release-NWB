@@ -20,7 +20,7 @@ newOldRecall=[];
 
 
 %Read NWB file 
-nwbFname = [basepath NWBsession.filename];
+nwbFname = fullfile(basepath,NWBsession.filename);
 
 
 if exist(nwbFname) && ~isempty(NWBsession.filename)
@@ -106,7 +106,7 @@ if length(all_category_ids) == 150
     stimuliRecog = all_category_ids(51:150);
     stimuliLearn = all_category_ids(1:50);
     for i = 51:150
-            temp = nwb.intervals_trials.vectordata.get('new_old_labels_recog').data.load();
+            temp = nwb.intervals_trials.vectordata.get('new_old_labels_recog').data.load();            
             newOldRecogLabels = [newOldRecogLabels, (temp(i))];
         
     end

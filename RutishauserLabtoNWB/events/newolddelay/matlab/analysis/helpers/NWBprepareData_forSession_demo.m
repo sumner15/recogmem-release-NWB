@@ -9,6 +9,7 @@ function [params, basedirData_forSession,basedirEvents_forSession,brainArea] = N
 %load stimuli and behavioral responses - recognition
 [~, stimuliRecog, newOldRecogLabels, recogResponses, responsesEventfile, recallResponses, recallEventfile, newOldRecall, eventsRecog, categoryMappingRecog, ~, ...
     RTRecog_raw, RTRecog_vsQ] = NWBloadDataOfBlock_release( NOsession_toUse, ind, 1,basepath ); %1 mode recog
+newOldRecogLabels = str2double(newOldRecogLabels); % added Sep 2020 SL Norman
 
 %load stimuli --learning
 if NOsession_toUse.EXPERIMENTIDLearn>0    %if this session has a learning block
