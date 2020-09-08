@@ -13,16 +13,16 @@
 
 % Point this directory to where the downloaded code is located.
 %codePath = 'C:\svnwork\nwbsharing\RutishauserLabtoNWB\'; % => enter here your path where the code is located. For Windows: 'nwb_example\'; For Linux or Mac: 'nwb_example/'
-codePath = 'C:\svnwork\nwbsharing\RutishauserLabtoNWB\';
+codePath = '/Users/sumner/Documents/code/recogmem-release-NWB/RutishauserLabtoNWB';
 
 % Point this directory to where the downloaded NWB data is located.
 %basepathData = 'V:\LabUsers\chandravadian\NWB Data\matlab_win\';%  => enter here your path where the data is located. For Windows: 'data\'; For Linux or Mac: 'data/'
-basepathData = 'V:\LabUsers\chandravadian\NWB Data\NWBData\';
+basepathData = '/Users/sumner/Documents/data/NWB_recogmem/NWBData';
    
 %List of sessions to analyze (for testing purposes)
-allSessionsToUse = [5]; 
+allSessionsToUse = 134:136; 
 
-runAllAvailableSesssions = 0 ; % enable to process all available sessions (not just the one(s) specified above). Uses NWB_listOf_allUsable
+runAllAvailableSesssions = 0; % enable to process all available sessions (not just the one(s) specified above). Uses NWB_listOf_allUsable
 
 addpath(fullfile(codePath)); 
 

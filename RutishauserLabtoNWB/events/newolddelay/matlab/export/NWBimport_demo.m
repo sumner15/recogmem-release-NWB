@@ -8,10 +8,8 @@
 %% parameters
 %NOID=105;
 
-fName_NWB = ['C:\Users\chandravadn1\Desktop\code\test2\P19HMH_062708.nwb'] ;  
-
-
-
+% fName_NWB = ['C:\Users\chandravadn1\Desktop\code\test2\P19HMH_062708.nwb'] ;  
+fName_NWB = '/Users/sumner/Documents/data/NWB_recogmem/NWBData/P19HMH_NOID28.nwb';
 
 %% read NWB
 nwb_in = nwbRead(fName_NWB);
