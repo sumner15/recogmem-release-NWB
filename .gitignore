@@ -21,3 +21,5 @@ dist/
 #nwb
 *.nwb
 *.DS_Store
+
+.vscode/
